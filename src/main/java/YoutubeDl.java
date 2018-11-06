@@ -19,6 +19,6 @@ public class YoutubeDl {
             }
             System.out.println(line);
         }
-        return mp3;
+        return mp3.trim();
     }
 }

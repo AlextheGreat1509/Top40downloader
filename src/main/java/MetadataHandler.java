@@ -26,6 +26,7 @@ public class MetadataHandler {
         id3v2Tag.setYear(year);
         id3v2Tag.setGenreDescription("Top 40");
         String trackTitle = id3v2Tag.getTitle();
+        trackTitle = trackTitle.replace(":", "-");
 
         String tempMp3 = mp3.substring(0, mp3.indexOf("-") + 2) + trackTitle + ".mp3.new";
         String newMp3 = mp3.substring(0, mp3.indexOf("-") + 2) + trackTitle + ".mp3";
